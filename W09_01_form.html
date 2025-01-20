@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body{
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <H1>HTML Form</H1>
+    <H3>Inprt Element</H3>
+    <p>An <span style="color: red;">input element</span> can be displayed in manys,depending on <span style="color: red;">type</span> attribute.</p>
+    <fieldset >
+        <legend>Text Field</legend>
+        <form action="" method="post">
+            <label for="ff">First Name</label>
+            <input type="text" name="fname" id="ff" placeholder="ป้อนชื่อ" required>
+            <br>
+            
+            <label for="ll">Last Name</label>
+            <input type="text" name="lname" id="ll" placeholder="ป้อนนามสกุล">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ป้อนอีเมล" required>
+            <br>
+            <label for="age0">Age</label>
+            <input type="number" name="age" id="age0" placeholder="ป้อนอายุ" min="1"max="100">
+            <br>
+            <label for="age1">Age Randonly</label>
+            <input type="number" name="age" id="age1" placeholder=" " min="1"max="10" value="8" readonly>
+            
+            <br>
+            <label for="pwd">Password</label>
+            <input type="password" name="password" id="pwd" placeholder="ป้อนรหัสผ่าน" required minlength="8">
+            <br>
+            <label for="BD">Birth Day</label>
+            <input type="date" name="birthday" id="BD" required>
+            <br>
+            <lable for="url">URL</lable>
+            <input type="url" name="url" id="url" placeholder="https://www.examples.com">
+            <br>
+            <label for="address">ที่อยู่</label>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="5" placeholder="ป้อนที่อยู่"></textarea>
+            <br>
+            <label for="color">สี</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="photo">เลือกรูป</label>
+            <input type="file" name="photo" id="photo">
+            <br>
+            <input type="submit">
+            <input type="reset">
+            
+    </fieldset>
+    <fieldset>
+        <legend>Radio Button</legend>
+        <form action="" method="post">
+            <label>Gender</label>
+            <input type="radio"name="gender" id="male"value="M">
+            <label for="meal">ชาย</label>
+            <input type="radio"name="gender" id="female"value="f">
+            <label for="female">หญิง</label>
+            <br>
+            <input type="submit"value="ยินยัน">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Checkbox</legend>
+        <form action="" method="post">
+            <label for="">วิชาที่ชอบ</label>
+            <input type="checkbox"name="subject1" id="math"value="math">
+            <label for="math">คณิตศาสตร์</label>
+            <input type="checkbox"name="subject2" id="sci"value="sci">
+            <label for="sci">วิทยาศาสตร์</label>
+            <input type="checkbox"name="subject3" id="eng"value="eng">
+            <label for="eng">คณิตศาสตร์</label>
+            <br>
+            <button type="submit">ตกลง</button>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>DropDown List [Select...Option...]</legend>
+     <form action="" method="post">
+         <label for="province">จังหวัด</label>   
+            <select name="province" id="province">
+                <option value="bkk">กรุงเทพมหานคร</option>
+                <option value="nakhon pathom">นครปฐม</option>
+                <option value="Khonkaen">ขอนแก่น</option>
+                <option value="chianmai">เชียงใหม่</option>
+            </select>
+            <br>
+            <button type="submit">ตกลง</button>
+
+    </fieldset>
+</body>
+</html>
