@@ -2,9 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(141, 190, 209);
 }
 header {
   background-color: skyblue;
+  margin-bottom: 20px;
+}
+header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+header a:hover {
+  color: dodgerblue;
 }
 nav {
   display: flex;
@@ -38,6 +47,8 @@ nav {
   padding: 8px 16px;
   border-radius: 10px;
   border: none;
+
+
   text-decoration: none;
 }
 .btn-2 {
@@ -47,10 +58,39 @@ nav {
   border-radius: 10px;
   border: solid dodgerblue;
   text-decoration: none;
+  box-sizing: border-box;
+}
+.btn-1:hover {
+  background-color: lightgray;
+}
+.btn-2:hover {
+  background-color: lightgray;
+  color: white;
+  box-sizing: border-box;
+  border: solid lightgray;
 }
 .container {
-  background-color: aquamarine;
+  width: 70%;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 footer {
   background-color: dodgerblue;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
 }
