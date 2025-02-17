@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header{
+        text-align: center;
+        background-color: slateblue;
+        padding: 2px;
+    }
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .containner{
+        margin: auto;
+        max-width: 800px;
+       padding: 10px;
+
+    }
+    .box-1{
+        background-color: aqua;
+        padding: 30px 10px 30px ;
+        margin: 0;
+        border-radius: 15px;
+        display: flex;
+        gap: 10%;
+    }
+    button{
+        float: right;
+        background-color: orange;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow:grey 5px 5px 10px;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: gray;
+    }
+    .inbox-1{
+       gap: 10px;
+    }
+    table, th, td {
+    width: 800px;
+    border-color: blue;
+    }
+    table th{
+        background-color: aquamarine;
+    }
+    footer{
+        background-color: slateblue;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    li{
+        list-style: circle;
+    }
+    hr{
+        border: 2px slateblue solid;
+    }
+    a{
+        color: blueviolet;
+    }
+    a:hover{
+        color:red
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white;"><span style="color:red;">รายงานผลเกรด...</span>Mr.Adisak Yongpanya</h1>
+    </header>
+    <hr>
+    <div class="containner">
+        <div>
+            <div class= "box-1">
+                <img src="Npru-logo.png" alt="Npru-logo" width="100px" height="auto">
+                <div class="inbox-1">
+                    <pre style="font-size: 16px;">
+                        664230034 นายอดิศักดิ์ ยงปัญญา
+                        หมู่เรียน 66/46 | อาจารย์ที่ปรึกษา อ.แก้วใจ อาภรณ์พิศาล
+                        สาขา Link => <a href="http://pgm.npru.ac.th/it/">เทคโนโลยีสารสนเทศ</a> | คณะวิทยาศาสตร์และเทคโนโลยี
+                    </pre>
+                    <button>More Information</button>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center;">ผลการเรียน</h2>
+
+        <table border="1">
+            <tr>
+                <th style="width: 15%;">รหัสวิชา</th>
+                <th style="width: 60%;">ชื่อวิชา</th>
+                <th style="width: 15%;">เกรด</th>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">Total GPA : 3.77</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">1500201</td>
+                <td>ภาษาอังกฤษเพื่อการสื่อสารข้ามวัฒนธรรม</td>
+                <td style="text-align: center;">A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2000203</td>
+                <td>การบริหารจัดการในศตวรรษที่ 21</td>
+                <td style="text-align: center;">A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4000203</td>
+                <td>ฟิต ฟอร์ เฟิร์ม</td>
+                <td style="text-align: center;">A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7202106</td>
+                <td>การวิเคราะห์และออกแบบระบบสารสนเทศ</td>
+                <td style="text-align: center;">B+</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7202302</td>
+                <td>ระบบปฏิบัติการ</td>
+                <td style="text-align: center;">A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7202303</td>
+                <td>โครงสร้างข้อมูลและระบบฐานข้อมูล</td>
+                <td style="text-align: center;">A</td>
+            </tr>
+        </table>
+        <h1>หมายเหตุ</h1>
+        <ul>
+            <li>เกรดที่แสดงจะทำการคำนวนเกรดรายวิชา</li>
+            <li>Transcript จะถือค่าที่ได้คำนวนเก็บไว้ ณ วันสิ้นสุดภาค</li>
+        </ul>
+    </div>
+    <footer>&copy; Webmaster by Adisak Yongpanya. IT 664230034 <br>
+        Nakhon Pathom rajabhat University
+    </footer>
+</body>
+</html>
