@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Intro</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+   
+     <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container{
+            background-color: lightblue;
+            text-align: center;
+            color: red;
+            padding: 20px;
+            margin-top: 20px;
+            ul{
+                text-align: left;
+            }
+        }
+        .container-fluid{
+            background-color: lightcoral;
+            
+            
+        }
+        </style>
+</head>
+<body>
+    <h1>Bootstrap Intro</h1>
+    <hr>
+    <h1>เปลี่ยบเทียบ containner vs container-fluid</h1>
+    <div class="container">
+        <p>container</p>
+    </div>
+
+    <!-- container-fluid -->
+    <div class="container-fluid">
+        <p>container-fluid</p>
+    </div>
+    <hr>
+    <!-- เรียนรู้คำสั่ง(class)ของ bootstrap -->
+     <div class="container">
+        <h2>กรณี เขียนคำสั่ง stylesheet ควบคุมด้วยตนเอง</h2>
+        <Ul>
+            <li>background-color: lightblue</li>
+            <li>text-align: center</li>
+            <li>color: red</li>
+            <li>padding: 20px</li>
+            <li>margin-top: 20px</li>
+        </Ul>
+        </div>
+    <div class="container bg-dark text-warning text-start p-5 mt-5">
+        <h2>กรณี เขียนคำสั่ง stylesheet ควบคุมด้วยbootstrap</h2>
+        <Ul>
+            <li>background-color==> bg-dark</li>
+            <li>text-align==> text-start</li>
+            <li>color==> text-warning</li>
+            <li>padding==> p-5</li>
+            <li>margin-top==> mt-5</li>
+    
+        </Ul>
+       
+        </div>
+        <hr>
+        <!-- Grid Basic -->
+        <h1>เซ็ตค่าต่างๆ โดยใช้ class จาก bootstrap</h1>
+        <div class="container-fluid text-center bg-secondary text-warning p-3 mt-5">
+            <h1>Grid Basic</h1>
+            <p>แบ่งคอลัมน์</p> 
+        </div>
+        <div class="row">
+            <div class="col-sm-4 bg-danger">
+                <h4 class="card-title">Colum</h4>
+                <p class="text-start card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perspiciatis.</p>
+            </div>
+            <div class="col-sm-4 bg-warning">
+                <h4 class="card-title">Colum</h4>
+                <p class="text-start card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perspiciatis.</p>
+            </div>
+            <div class="col-sm-4 bg-success">
+                <h4 class="card-title">Colum</h4>
+                <p class="text-start card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perspiciatis.</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Gride & Card & Button -->
+         <div class="container-fluid text-center bg-dark text-white p-2 mt-5">
+            <h1>Grid & Card & Button</h1>
+            </div>
+            <div class="container ">
+                <div class="row mt-3 mb-4">
+                    <div class="col-md-4 ">
+                        <div class="card pt-3 px-3 mb-4">
+                            <h4 class="card-title">column 1</h4>
+                            <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <h4 class="card-title">column 2</h4>
+                            <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <h4 class="card-title">column 3</h4>
+                            <p class="text-start card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid & Card & Button -->
+                <div class="row mt-3 mb-4 ">
+                    <div class="col-md-4 ">
+                        <div class="card pt-3 px-3 mb-4">
+                            <div class="card-body">
+                                <h4>column 1</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <button type="button" class="btn btn-primary">go somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <div class="card-body">
+                                <h4>column 2</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <button type="button" class="btn btn-outline-success">go somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <div class="card-body">
+                                <h4>column 3</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <div class="d-grid gap-3">
+                                    <button type="button" class="btn btn-danger disabled">go somewhere</button>
+                                    <button type="button" class="btn btn-outline-info">go somewhere</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Grid & Card & Button & image -->
+                <div class="row mt-3 mb-4 ">
+                    <div class="col-md-4 ">
+                        <div class="card pt-3 px-3 mb-4">
+                            <img class="card-img-top" src="images/rabbit2.avif" alt="Card image">
+                            <div class="card-body">
+                                <h4>column 1</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <button type="button" class="btn btn-primary">go somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <img class="card-img-top" src="images/rabbit2.avif" alt="Card image">
+                            <div class="card-body">
+                                <h4>column 2</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <button type="button" class="btn btn-outline-success">go somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card pt-3 px-3 mb-4">
+                            <img class="card-img-top" src="images/rabbit2.avif" alt="Card image">
+                            <div class="card-body">
+                                <h4>column 3</h4>
+                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, non?</p>
+                                <div class="d-grid gap-3">
+                                    <button type="button" class="btn btn-danger disabled">go somewhere</button>
+                                    <button type="button" class="btn btn-outline-info">go somewhere</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- <script src="js/boostrap/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
